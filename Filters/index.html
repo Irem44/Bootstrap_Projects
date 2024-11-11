@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filters</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="btn accordion-button bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+            >
+              Marka
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <nav class="">
+                <a href="" class="text-secondary">Lenova</a>
+                <a href="" class="text-secondary">Asus</a>
+                <a href="" class="text-secondary">Hp</a>
+                <a href="" class="text-secondary">Dell</a>
+                <a href="" class="text-secondary">MSI</a>
+                <a href="" class="text-secondary">Samsung</a>
+                <a href="" class="text-secondary">Acer</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button btn bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsetwo"
+            >
+              Fiyat
+            </button>
+          </h2>
+          <div id="collapsetwo" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <div class="row mb-2">
+                <div class="col-6">En az</div>
+                <div class="col-6">En çok</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">
+                  <input
+                    type="number"
+                    name="number1"
+                    id="number1"
+                    placeholder="5.000"
+                  />
+                </div>
+                <div class="col-6">
+                  <input
+                    type="number"
+                    name="number2"
+                    id="number2"
+                    placeholder="10.000"
+                  />
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  <button class="btn text-center uygula btn-outline-secondary">
+                    Uygula
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="btn bg-light accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsethree"
+            >
+              Ekran Boyutu
+            </button>
+          </h2>
+          <div class="collapse accordion-collapse p-3" id="collapsethree">
+            <div class="accordion-body">
+              <button type="button" class="btn btn-light inc">13,3 inç</button>
+              <button type="button" class="btn btn-light inc">14 inç</button>
+              <button type="button" class="btn btn-light inc">15 inç</button>
+              <button type="button" class="btn btn-light inc">17 inç</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              type="button"
+              class="accordion-button bg-light"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsefour"
+            >
+              Ram Kapasitesi
+            </button>
+          </h2>
+          <div id="collapsefour" class="collapse accordion-collapse">
+            <div class="accordion-body">
+              <div class="form-check mb-2">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="gb"
+                  id="gb1"
+                />
+                <label for="gb1" class="form-check-label">16 GB</label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="gb"
+                  id="gb2"
+                />
+                <label for="gb2" class="form-check-label">32 GB</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="gb"
+                  id="gb3"
+                />
+                <label for="gb3" class="form-check-label">64 GB</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              type="button"
+              class="accordion-button bg-light"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsefive"
+            >
+              Ürün Modeli
+            </button>
+          </h2>
+          <div id="collapsefive" class="collapse accordion-collapse p-3">
+            <div class="form-check mb-2">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="radio"
+                id="r1"
+              />
+              <label for="r1" class="form-check-label">Oyun Bilgisayarı</label>
+            </div>
+            <div class="form-check mb-2">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="radio"
+                id="r2"
+              />
+              <label for="r2" class="form-check-label">Notebook</label>
+            </div>
+            <div class="form-check mb-2">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="radio"
+                id="r3"
+              />
+              <label for="r3" class="form-check-label">Ultrabook</label>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary filtrele">Filtrele</button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
