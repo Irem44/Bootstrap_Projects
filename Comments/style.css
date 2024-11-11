@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.cizgi {
+  height: 2px;
+}
+
+.fa {
+  color: orange;
+}
+
+img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+.isim {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.ara {
+  height: 100%;
+  width: 2px !important;
+}
+
+.scroll .scrl {
+  background: orange;
+}
